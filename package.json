@@ -1,12 +1,12 @@
 {
-  "name": "raw-transaction-hex-decoder",
-  "version": "1.1.6",
-  "description": "Decode BTC, ETH, XRP, BNB Raw Transactions HEX",
+  "name": "bnb-tx-decoder",
+  "version": "1.0.0",
+  "description": "Decode BNB Raw Transactions",
   "main": "index.js",
   "scripts": {
     "test": "jest -t"
   },
-  "author": "anton",
+  "author": "naiem, anton",
   "keywords": [
     "btc",
     "eth",
@@ -22,24 +22,22 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "bitcoinjs-lib": "5.0.5",
     "is_js": "^0.9.0",
-    "jest": "^24.8.0",
     "protocol-buffers-encodings": "^1.1.0",
-    "ripple-binary-codec": "^0.2.1",
-    "rlp": "^2.0.0",
     "safe-buffer": "^5.1.2"
   },
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antoncoding/raw-transaction-hex-decoder.git"
+    "url": "git+https://github.com/ferrumnet/bnb-tx-decoder.git"
   },
   "bugs": {
-    "url": "https://github.com/antoncoding/raw-transaction-hex-decoder/issues"
+    "url": "https://github.com/ferrumnet/bnb-tx-decoder/issues"
   },
-  "homepage": "https://github.com/antoncoding/raw-transaction-hex-decoder#readme"
+  "homepage": "https://github.com/ferrumnet/bnb-tx-decoder#readme"
 }
