@@ -93,10 +93,8 @@ const decodeObjectBinary = (bytes, type, isLengthPrefixed, messageFactory) => {
   // If registered concrete, consume and verify prefix bytes.
   if(type.msgType) {
     const actualMsgType = bytes.slice(0, 4);
-    console.log('ACTUAL MSG TYPE', actualMsgType.toString('hex'));
     if (type.msgType === 'AUTO' && messageFactory) { // Automatically set the type of message
       const newType = messageFactory(actualMsgType.toString('hex'));
-      console.log('Replaceing type with ', type, newType)
       if (!newType) {
         console.warn('Unrecognized message type', actualMsgType);
       }
