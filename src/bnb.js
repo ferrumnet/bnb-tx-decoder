@@ -34,7 +34,7 @@ module.exports = function(hex, type = 'AUTO') {
         return unMarshalBinaryLengthPrefixed(Buffer.from(hex,'hex'), TYPE[type]).val
     }
     else if (type === 'AUTO') {
-        return unMarshalBinaryLengthPrefixed(Buffer.from(hex,'hex'), AUTO_TYPE, typeFactory).val
+        return unMarshalBinaryLengthPrefixed(Buffer.from(hex,'hex'), Object.assign({}, AUTO_TYPE), typeFactory).val
     }
     else throw 'type should be one of the built-in types of passed in as object';
 }
